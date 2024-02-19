@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;insert_and_Select&apos;" deleteContents="true" description="Delete resource &apos;insert_and_Select&apos;" element1="/insert_and_Select" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1707791958598"/>
+</session>

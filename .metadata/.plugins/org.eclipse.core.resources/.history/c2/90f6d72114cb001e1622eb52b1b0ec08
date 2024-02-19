@@ -1,0 +1,7 @@
+package com.study.product.config;
+
+public interface DBConfig {
+	String url = "mysql-db.ch0w4gg2ikrq.ap-northeast-2.rds.amazonaws.com";
+	String username = "aws";
+	String password = "1q2w3e4r!!";
+}

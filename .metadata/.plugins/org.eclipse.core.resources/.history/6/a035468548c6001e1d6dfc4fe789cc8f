@@ -1,0 +1,33 @@
+package com.study.array.servelt;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+
+
+@WebServlet("/data/addition")
+public class DataInsertServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+  	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		StringBuilder json = new StringBuilder();   //이줄을
+		String requestData = null;
+		
+		//문자열 -> 스트림
+		BufferedReader reader = request.getReader();
+		while((requestData = reader.readLine())!=null) {  //여기에 하나씩 넣음
+			json.append(requestData);
+		}
+		Gson gson = new Gson();
+		System.out.println(json.toString());
+	}
+
+}

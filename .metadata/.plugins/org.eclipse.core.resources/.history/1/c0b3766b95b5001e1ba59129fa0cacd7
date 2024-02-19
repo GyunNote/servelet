@@ -1,0 +1,14 @@
+package com.study.servlet_study.entity;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Builder
+@Data
+public class Product5 {
+
+	private String product5Name;
+	private int price;
+	private String size;
+	private String color;
+}
